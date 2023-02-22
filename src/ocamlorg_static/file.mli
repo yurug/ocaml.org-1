@@ -14,7 +14,7 @@ type t = { filepath : string; digest : string option }
 
 (* converts a static file reference to a relative URL by rendering the digest
    (if applicable) and filepath *)
-val to_url_path : t -> string
+val to_url_path : string -> string option -> string
 
 (* converts a relative URL to a static file reference by extracting the digest
    (if applicable) and filepath from the URL *)
