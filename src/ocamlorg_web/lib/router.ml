@@ -59,6 +59,13 @@ let package_route t =
       Dream.get Url.packages_search (Handler.packages_search t);
       Dream.get Url.packages_autocomplete_fragment
         (Handler.packages_autocomplete_fragment t);
+      Dream.get (Url.package_redirect ":name") (Handler.package_redirect t);
+      Dream.get
+        (Url.package_docs_redirect ":name")
+        (Handler.package_docs_redirect t);
+      Dream.get
+        (Url.package_redirect ~hash:":hash" ":name")
+        (Handler.package_redirect t);
       Dream.get
         (Url.package_overview ":name" ~version:":version")
         ((Handler.package_overview t) Handler.Package);
@@ -79,13 +86,6 @@ let package_route t =
         (Url.package_documentation ~hash:":hash" ~page:"**" ":name"
            ~version:":version")
         ((Handler.package_documentation t) Handler.Universe);
-      Dream.get (Url.package_redirect ":name") (Handler.package_redirect t);
-      Dream.get
-        (Url.package_redirect ~hash:":hash" ":name")
-        (Handler.package_redirect t);
-      Dream.get
-        (Url.package_docs_redirect ":name")
-        (Handler.package_docs_redirect t);
     ]
 
 let graphql_route t =
