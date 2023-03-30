@@ -11,6 +11,7 @@ let blog = Blog.render
 let books = Books.render
 let community = Community.render
 let home = Home.render
+let install = Install.render
 let industrial_users = Industrial_users.render
 let jobs = Jobs.render
 let learn = Learn.render
