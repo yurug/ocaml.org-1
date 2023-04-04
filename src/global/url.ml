@@ -66,9 +66,13 @@ let getting_started = tutorial "up-and-running"
 let best_practices = "/docs/best-practices"
 let problems = "/problems"
 let installer = "/install-platform.sh"
+let installer_opam = "/install-opam.sh"
 
 let github_installer =
   "https://github.com/tarides/ocaml-platform-installer/releases/latest/download/installer.sh"
+
+let github_installer_opam =
+  "https://raw.githubusercontent.com/ocaml/opam/master/shell/install.sh"
 
 let github_opam_file package_name package_version =
   Printf.sprintf

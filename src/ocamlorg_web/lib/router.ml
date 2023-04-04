@@ -50,6 +50,7 @@ let page_routes =
       Dream.get (Url.tutorial ":id") Handler.tutorial;
       Dream.get Url.playground Handler.playground;
       Dream.get Url.installer Handler.installer;
+      Dream.get Url.installer_opam Handler.installer_opam;
     ]
 
 let package_route t =
