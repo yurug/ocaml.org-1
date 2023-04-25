@@ -20,8 +20,10 @@ module Job = struct
 end
 
 module Meetup = struct
-  include Meetup
+  include Ocamlorg.Data.Meetup
+  open Ocamlorg.Data.Meetup
 
+  let all = Meetup.all
   let get_by_slug slug = List.find_opt (fun x -> String.equal slug x.slug) all
 end
 

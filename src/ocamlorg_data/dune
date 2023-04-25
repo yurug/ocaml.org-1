@@ -1,6 +1,7 @@
 (library
- (name data)
- (public_name ocamlorg.data))
+ (name ocamlorg.data)
+ (public_name ocamlorg.data)
+ (libraries ocamlorg.global))
 
 (rule
  (target academic_institution.ml)

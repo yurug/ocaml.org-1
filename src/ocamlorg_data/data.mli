@@ -75,15 +75,7 @@ module Job : sig
 end
 
 module Meetup : sig
-  type location = { lat : float; long : float }
-
-  type t = {
-    title : string;
-    slug : string;
-    url : string;
-    textual_location : string;
-    location : location;
-  }
+  include module type of Ocamlorg.Data.Meetup
 
   val all : t list
   val get_by_slug : string -> t option

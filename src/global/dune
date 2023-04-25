@@ -1,6 +1,9 @@
 (library
  (name ocamlorg)
- (public_name ocamlorg.global))
+ (public_name ocamlorg.global)
+ (libraries ppx_show.runtime ppx_stable)
+ (preprocess
+  (pps ppx_deriving_yaml ppx_stable ppx_show)))
 
 (rule
  (deps (universe))
