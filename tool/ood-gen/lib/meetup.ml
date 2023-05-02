@@ -1,4 +1,4 @@
-open Ocamlorg.Data.Meetup
+open Ocamlorg.Type.Meetup
 
 type metadata = {
   title : string;

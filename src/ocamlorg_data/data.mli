@@ -75,7 +75,7 @@ module Job : sig
 end
 
 module Meetup : sig
-  include module type of Ocamlorg.Data.Meetup
+  include module type of Ocamlorg.Type.Meetup
 
   val all : t list
   val get_by_slug : string -> t option

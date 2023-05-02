@@ -1,5 +1,5 @@
 (library
- (name ocamlorg.data)
+ (name data)
  (public_name ocamlorg.data)
  (libraries ocamlorg.global))
 
