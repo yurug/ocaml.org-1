@@ -310,6 +310,16 @@ categories:
         Replaces all occurences of a pattern in a text
 - title: Web Programming
   subcategories:
+  - title: Handling URIs
+    tasks:
+    - title: Parsing an URI
+      slug: uri-parsing
+      description: >
+        Parse URI strings
+    - title: Encoding an URI
+      slug: uri-encoding
+      description: >
+        Encoding an URI
   - title: HTTP Clients
     tasks:
     - title: Make a HTTP GET Request
