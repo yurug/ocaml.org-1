@@ -32,6 +32,22 @@ categories:
     slug: compress-a-directory-into-a-tarball
     description: >
       Store the contents of a file in a tar archive file
+  - title: Compress a ZIP file
+    slug: zip-compress
+    description: >
+      Compress a ZIP file
+  - title: Decompress a ZIP file
+    slug: zip-decompress
+    description: >
+      Decompress a ZIP file
+  - title: Compress a gzip file
+    slug: gzip-compress
+    description: >
+      Compress a gzip file
+  - title: Decompress a gzip file
+    slug: gzip-decompress
+    description: >
+      Decompress a gzip file
 - title: Concurrency & Parallelism
   subcategories:
   - title: Single-Threaded Concurrency
