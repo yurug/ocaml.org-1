@@ -116,6 +116,16 @@ categories:
       slug: serialize-csv
       description: >
         Serialize records into a CSV file
+  - title: XML
+    tasks:
+    - title: Generate XML
+      slug: xml-generation
+      description: >
+        Generate XML formatted outout
+    - title: XML Parsing
+      slug: xml-parsing
+      description: >
+        Parse XML formatted data
   - title: JSON
     tasks:
     - title: Serialize / Deserialize Unstructured JSON
