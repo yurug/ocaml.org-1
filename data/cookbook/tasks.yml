@@ -1,4 +1,14 @@
 categories:
+- title: Networking
+  tasks:
+  - title: TCP client
+    slug: tcp-client
+    description: >
+      Establish a TCP connection to a TCP server
+  - title: TCP server
+    slug: TCP server
+    description: >
+      Accept connections from clients over TCP
 - title: Command Line
   tasks:
   - title: Parse Command Line Arguments
